@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  'Roboto Mono', monospace;
+}
+
+
+
+.code-image {
+    width: 100%;    
+}
+
+.welcome .text {
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 0.2em;
+    position: absolute;
+    top: 35vh;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(232, 151, 146, 0.9);
+    color: whitesmoke;
+}
+
+.welcome .text h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 1.25em;
+    font-family: "Special Elite", cursive;
+    
+}
+
+.welcome .text p {
+    font-size: 24px;
+    text-align: center;
+    padding: 0;
+}
+
+/* 400 px for mobiles adjustment of the introduction bar */
+
+@media screen and (max-width: 400px) {
+    .welcome .text {
+        top: 15vh; 
+    }
+    
+    .welcome .text h1 {
+        font-size: 25px; 
+        padding: 10px;   
+    }
+
+    .welcome .text p {
+        font-size: 15px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .welcome .text {
+        top: 15vh; 
+    }
+    
+    .welcome .text h1 {
+        font-size: 25px; 
+        padding: 10px;   
+    }
+
+    .welcome .text p {
+        font-size: 15px;
+        padding: 0;
+    }
+}
+
+/* Nav bar styling */
+
+.main-nav {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* border: 1px solid black; */
+    /* align-items: flex-start; */
+    padding-bottom: 5px;
+    background-color: rgb(61, 110, 179);
+    position: sticky;
+    top: 0px;
+}
+nav li {
+    color: white;
+    text-decoration: none;  
+}
+
+nav ul {
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+nav li a {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #E89792;
+    
+}
+
+/* About me styling */
+
+
+.about h2 {
+    font-size: 40px;
+   
+    padding-right: 50px;
+    /* border: 1px solid green; */
+    text-align: end;
+    font-weight: bold;
+    margin-bottom: 0px;
+    background-color: whitesmoke;
+    color: #E89792;
+}
+
+.about p {
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* border: 1px solid red; */
+    color: rgb(61, 110, 179);
+    background-color: rgb(223, 222, 222);
+    margin: 0px;
+      
+}
+
+.big-ben img {
+    width: 100%;
+    text-align: center;
+   
+}
+
+/* Hobbies/Interests Styling */
+
+.hobbies h2 {
+    
+    font-size: 37px;
+   
+    padding-right: 50px;
+    /* border: 1px solid green; */
+    text-align: end;
+    font-weight: bold;
+    margin-bottom: 0px;
+    background-color: whitesmoke;
+    color: #E89792;
+}
+
+.hobbies p {
+    text-align: justify;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* border: 1px solid red; */
+    color: rgb(61, 110, 179);
+    background-color: rgb(223, 222, 222);
+    margin: 0px;
+      
+}
+
+.hobbies-picture img {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+        border: 1px solid red;
+        margin: 0;
+        padding: 0;
+        
+     }
+
+    .welcome .text {
+        top: 35vh; 
+    }
+    
+    .welcome .text h1 {
+        font-size: px; 
+        padding: 10px;   
+    }
+
+    .welcome .text p {
+        font-size: 25px;
+        padding: 0;
+    }
+
+    .main-nav {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly; 
+        /* border: 1px solid black;  */
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background-color: rgb(61, 110, 179);
+        position: sticky;
+        top: 0px;
+    }
+
+    nav li {
+        display: inline;   
+    }
+
+    .about {
+        width: 50%;
+
+    }
+
+    .big-ben { 
+        width: 50%;
+
+    }
+}
