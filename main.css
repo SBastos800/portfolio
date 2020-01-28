@@ -2,16 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
+
+.container {
+    height: 600vh;
+    width: 100vw;
+}
+
+.container section {
+    height: 16.66%;
+    width: 100%;
+}
+
+
 
 body {
     font-family:  'Roboto Mono', monospace;
 }
 
-
-
-.code-image {
-    width: 100%;    
+.codingimage {
+    height: 100%;
+    width: 100%;
+    background-image: url("./codeimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .welcome .text {
@@ -23,7 +38,8 @@ body {
     padding: 1%;
     width: 100%;
     text-align: center;
-    background-color: rgba(232, 151, 146, 0.9);
+    /* background-color: rgba(232, 151, 146, 0.9); */
+    background-color: rgba(155, 63, 105, 0.9);
     color: whitesmoke;
 }
 
@@ -41,61 +57,27 @@ body {
     padding: 0;
 }
 
-/* 400 px for mobiles adjustment of the introduction bar */
 
-@media screen and (max-width: 400px) {
-    .welcome .text {
-        top: 15vh; 
-    }
-    
-    .welcome .text h1 {
-        font-size: 25px; 
-        padding: 10px;   
-    }
 
-    .welcome .text p {
-        font-size: 15px;
-        padding: 0;
-    }
-}
 
-@media screen and (max-width: 467px) {
-    .welcome .text {
-        top: 15vh; 
-    }
-    
-    .welcome .text h1 {
-        font-size: 25px; 
-        padding: 10px;   
-    }
-
-    .welcome .text p {
-        font-size: 15px;
-        padding: 0;
-    }
-}
 
 /* Nav bar styling */
 
 .main-nav {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* border: 1px solid black; */
-    /* align-items: flex-start; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    border: 1px solid black; 
+    align-items: flex-start;
     padding-bottom: 5px;
     background-color: rgb(61, 110, 179);
+    background-color: #9B3F69;
     position: sticky;
     top: 0px;
 }
 nav li {
     color: white;
     text-decoration: none;  
-}
-
-nav ul {
-    white-space: nowrap;
-    max-width: 100%;
 }
 
 a:link {
@@ -106,121 +88,156 @@ nav li a {
     padding: 20px;
     font-size: 20px;
     text-align: center;
-    color: #E89792;
-    
+    color: white;  
 }
 
-/* About me styling */
-
-
-.about h2 {
-    font-size: 40px;
-   
-    padding-right: 50px;
-    /* border: 1px solid green; */
-    text-align: end;
-    font-weight: bold;
-    margin-bottom: 0px;
-    background-color: whitesmoke;
-    color: #E89792;
+a:hover { 
+    color: white; 
 }
 
-.about p {
-    text-align: justify;
-    font-size: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    /* border: 1px solid red; */
-    color: rgb(61, 110, 179);
-    background-color: rgb(223, 222, 222);
-    margin: 0px;
-      
+
+
+ /* .imagebox1 { 
+    width: 70%;
+    height: 80%;
+    background-image: url("./portosunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}  */
+
+.page2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.big-ben img {
-    width: 100%;
+.container .about {
+    height: 30%;
+    width: 60%;
     text-align: center;
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-/* Hobbies/Interests Styling */
-
-.hobbies h2 {
-    
-    font-size: 37px;
-   
-    padding-right: 50px;
-    /* border: 1px solid green; */
-    text-align: end;
-    font-weight: bold;
-    margin-bottom: 0px;
-    background-color: whitesmoke;
-    color: #E89792;
+.imagebox1 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./portosunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.hobbies p {
-    text-align: justify;
-    font-size: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    /* border: 1px solid red; */
-    color: rgb(61, 110, 179);
-    background-color: rgb(223, 222, 222);
-    margin: 0px;
-      
+.page3 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.hobbies-picture img {
-    width: 100%;
+.container .nurse {
+    height: 30%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-@media screen and (min-width: 768px) {
-    .container {
-        width: 100%;
-        border: 1px solid red;
-        margin: 0;
-        padding: 0;
-        
-     }
-
-    .welcome .text {
-        top: 35vh; 
-    }
-    
-    .welcome .text h1 {
-        font-size: px; 
-        padding: 10px;   
-    }
-
-    .welcome .text p {
-        font-size: 25px;
-        padding: 0;
-    }
-
-    .main-nav {
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-evenly; 
-        /* border: 1px solid black;  */
-        align-items: center;
-        padding-top: 10px;
-        padding-bottom: 5px;
-        background-color: rgb(61, 110, 179);
-        position: sticky;
-        top: 0px;
-    }
-
-    nav li {
-        display: inline;   
-    }
-
-    .about {
-        width: 50%;
-
-    }
-
-    .big-ben { 
-        width: 50%;
-
-    }
+.imagebox2 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./nursing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.page4 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .tech {
+    height: 30%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagebox3 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./tech.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page5 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .duo {
+    height: 30%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagebox4 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./duo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page6 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .hobbies {
+    height: 30%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagebox5 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./worldmap.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
