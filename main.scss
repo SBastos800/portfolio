@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.container {
+    height: 1000vh;
+    width: 100vw;
+}
+
+.container section {
+    height: 10%;
+    width: 100%;
+}
+
+
+
+body {
+    font-family:  'Roboto Mono', monospace;
+}
+
+.codingimage {
+    height: 100%;
+    width: 100%;
+    background-image: url("./codeimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome .text {
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 0.2em;
+    position: absolute;
+    top: 35vh;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+    /* background-color: rgba(232, 151, 146, 0.9); */
+    background-color: rgba(155, 63, 105, 0.9);
+    color: whitesmoke;
+}
+
+.welcome .text h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 1.25em;
+    font-family: "Special Elite", cursive;
+    
+}
+
+.welcome .text p {
+    font-size: 24px;
+    text-align: center;
+    padding: 0;
+}
+
+
+
+
+
+/* Nav bar styling */
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    border: 1px solid black; 
+    align-items: flex-start;
+    padding-bottom: 5px;
+    background-color: rgb(61, 110, 179);
+    background-color: #9B3F69;
+    position: sticky;
+    top: 0px;
+}
+nav li {
+    color: white;
+    text-decoration: none;  
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+nav li a {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;  
+}
+
+a:hover { 
+    color: white; 
+}
+
+
+
+ /* .imagebox1 { 
+    width: 70%;
+    height: 80%;
+    background-image: url("./portosunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}  */
+
+.page2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .about {
+    height: 30%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagebox1 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./portosunset.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page3 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .nurse {
+    height: 30%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagebox2 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./nursing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page4 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .tech {
+    height: 30%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagebox3 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./tech.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page5 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .duo {
+    height: 30%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagebox4 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./duo.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page6 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .hobbies {
+    height: 30%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.imagebox5 {
+    height: 30%;
+    width: 60%;
+    background-image: url("./worldmap.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
