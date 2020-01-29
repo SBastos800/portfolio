@@ -11,20 +11,21 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css?family=Special+Elite&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/052e187b9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./main.css">
     <title>Sonia Bastos - Portfolio</title>
 </head>
 
 <body>
     <div class="container">
-        <section class="page1">
+        <section class="page">
             <div class="codingimage"></div>
-            <section class="welcome">
+            <!-- <section class="welcome"> -->
                     <div class="text">
                         <h1>Sonia Bastos</h1>
                         <p>From Healthcare to Coding</p>
                     </div>
-            </section>
+            <!-- </section> -->
         </section>
 
             <!-- <header> -->
@@ -42,51 +43,98 @@
                         <li><a href="#about-me">About me</a></li>
                         <li><a href="#hobbies-interests">Hobbies/Interests</a></li>
                         <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
             </nav>
 
-            <section class="page2">
-                <section class="about">
+            
+            <section class="page page2" id="about-me">
+                <section class="about right" >
+                    <div>
                         <h2>About me</h2>
                         <p>Hello! I'm Sonia. I'm naturally inquisitive, and in my professional life I'm dedicated and have always pursued my dreams. I was born in Portugal, and I grew up near Porto, which is where I went to the University.</p>
+                    </div>
                 </section>
-                <div class="imagebox1"></div>
+                <div class="imagebox1 left"></div>
             </section> 
 
-            <section class="page3">
-                <section class="nurse">
+            <section class="page page3">
+                <section class="nurse right" >
                     <p>After I graduated as a nurse, I spent four and a half years working in a National Hospital in Lisbon. I loved living in Lisbon, but eventually, drawn by the English language and career opportunities, I decided to move to London to take a role as a Staff Nurse in one of the most renowned Private Hospitals in London.</p>
                 </section>
-                 <div class="imagebox2"></div>
+                 <div class="imagebox2 left"></div>
             </section>
 
-            <section class="page4">
-                <section class="tech">
+            <section class="page page4">
+                <section class="tech right" >
                     <p>I fully settled in London, and after a further 8 years working in the healthcare sector, I've leapt into the world of Tech and am now an aspiring Trainee Web Developer. I'm passionate about new experiences and when experiencing feeling of the unknown, my curiosity gives me courage to keep going!</p>
                 </section>
-                <div class="imagebox3"></div>
+                <div class="imagebox3 left"></div>
             </section>
          
-            <section class="page5">
-                    <section class="duo">
+            <section class="page page5">
+                    <section class="duo right">
+                        <div id="hobbies-interests">
                         <h2>Hobbies/Interests</h2>
-                        <p>Theres something fascinating about learning languages! Speaking english as second language gives me exactly that experience, however the eagerness to repeat this experience drown me into starting learn French. Ive been learning French throught the app Duolingo which also has been recently teaching me more  about technology.</p>
+                            <p>Theres something fascinating about learning languages! Speaking english as second language gives me exactly that experience, however the eagerness to repeat this experience drown me into starting learn French. Ive been learning French throught the app Duolingo which also has been recently teaching me more  about technology.</p>
+                        </div>
                     </section>
-                    <div class="imagebox4"></div>
+                    <div class="imagebox4 left"></div>
             </section>
 
-            <section class="page6">
-                        <section class="hobbies">
+            <section class="page page6">
+                        <section class="hobbies right">
                             <p>I also love to cycle, travelling, going to bars and restaurants in London and experience new places. If staying in, I like to watch netflix including documentaries. </p>
                         </section>
-                        <div class="imagebox5"></div>
+                        <div class="imagebox5 left"></div>
             </section>
 
-            <section class="page7"></section>
-            <section class="page8"></section>
-            <section class="page9"></section>
-            <section class="page10"></section>
+            <section class="page page7">
+                <h2>Projects</h2>
+            </section>
+            <section class="page page8"></section>
+            <section class="page page9"></section>
+            <section class="page page10">
+                <div id="contact">
+                    <h2>Get in touch!</h2>
+                </div>
+                <div class="contact-container">
+                    <form action="">
+                        <fieldset>
+                            <label for="firstname" name="firstname">First Name:</label>
+                            <input type="text" name="firstname" placeholder="First Name">
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <label for="lastname" name="lastname" >Last Name:</label>
+                            <input type="text" name="lastname" placeholder="Last Name"  >
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <label for="email" name="lastname">Email:</label>
+                            <input type="email" placeholder="Email">
+                        </fieldset>
+                        <br>
+                        <input type="submit" id="submit-button">
+                    </form>
+                </div>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/s%C3%B3nia-bastos-543b1583/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/SBastos800" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="mailto:sonia.bastos@nology.io" target="_blank">
+                        <i class="far fa-envelope"></i>
+                    </a>   
+                </div>
+            </section>
+            <footer>
+                <small>Created with html and CSS 2020</small>
+            </footer>
+            
+            
 
     </div>
 
