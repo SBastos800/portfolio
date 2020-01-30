@@ -4,6 +4,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
 }
 
 .container {
@@ -13,46 +18,51 @@
 .container section {
   height: 100vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body {
-  font-family: 'Roboto Mono', monospace;
+.container section .about {
+  height: 30%;
+  width: 60%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.codingimage {
-  height: 100%;
-  width: 100%;
-  background-image: url("./codeimage.jpg");
+.container section .img {
+  height: 30%;
+  width: 60%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.text {
-  text-align: center;
-  line-height: 40px;
-  letter-spacing: 0.2em;
-  position: absolute;
-  top: 40vh;
-  padding: 1%;
-  width: 100%;
-  text-align: center;
-  background-color: rgba(155, 63, 105, 0.9);
-  color: whitesmoke;
-}
-
-.text h1 {
-  font-size: 35px;
-  font-weight: bolder;
-  line-height: 1.25em;
-}
-
-.text p {
-  font-size: 24px;
-  text-align: center;
-  padding: 0;
+  background-position: center;
 }
 
 /* Nav bar styling */
+#about-me, #hobbies, #projects, #contact {
+  padding-top: 46px;
+}
+
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,96 +85,73 @@ body {
   top: 0px;
 }
 
-nav li {
+.main-nav li {
   color: white;
   text-decoration: none;
 }
 
-a:link {
+.main-nav li a:link {
   text-decoration: none;
 }
 
-nav li a {
+.main-nav li a {
   padding: 20px;
   font-size: 20px;
   text-align: center;
   color: white;
 }
 
-.page {
-  height: 150vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.page1 .codingimage {
+  height: 100%;
+  width: 100%;
+  background-image: url("./codeimage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.container .about {
-  height: 30%;
-  width: 60%;
+.page1 .text {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 40vh;
+  padding: 1%;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(155, 63, 105, 0.9);
+  color: whitesmoke;
 }
 
-.imagebox1 {
-  height: 30%;
-  width: 60%;
+.page1 .text h1 {
+  font-size: 35px;
+  font-weight: bolder;
+  line-height: 1.25em;
+}
+
+.page1 .text p {
+  font-size: 24px;
+  text-align: center;
+  padding: 0;
+}
+
+.page2 .imagebox1 {
   background-image: url("./portosunset.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.imagebox2 {
-  height: 30%;
-  width: 60%;
+.page3 .imagebox2 {
   background-image: url("./nursing.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.imagebox3 {
-  height: 30%;
-  width: 60%;
+.page4 .imagebox3 {
   background-image: url("./tech.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.imagebox4 {
-  height: 30%;
-  width: 60%;
+.page5 .imagebox4 {
   background-image: url("./duo.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.imagebox5 {
-  height: 30%;
-  width: 60%;
+.page6 .imagebox5 {
   background-image: url("./worldmap.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .container .contact-container {
@@ -254,50 +241,42 @@ footer {
     white-space: nowrap;
     margin: 0 auto;
   }
-  .container #about-me, .container #hobbies-interests, .container #contact {
-    padding-top: 46px;
+  .container .page2, .container .page3, .container .page4, .container .page5, .container .page6 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 2fr 2fr 0.5fr;
+        grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    grid-auto-rows: 100%;
+    grid-gap: 40px;
   }
-  .container .page {
+  .container .page2 .left, .container .page3 .left, .container .page4 .left, .container .page5 .left, .container .page6 .left {
+    height: unset;
+    width: unset;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  }
+  .container .page2 .right, .container .page3 .right, .container .page4 .right, .container .page5 .right, .container .page6 .right {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+    height: 50%;
     width: 100%;
-    height: 400px;
-    border: 2px solid green;
-    margin: 0 auto;
-  }
-  .container .page .right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 40%;
-    height: 250px;
-    border: 1px solid red;
-  }
-  .container .page .left {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 40%;
-    height: 250px;
-    border: 1px solid red;
+    background-size: cover;
+    background-position: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
