@@ -6,14 +6,14 @@
 }
 
 .container {
-    // height: 1000vh;
     width: 100vw;
+
 }
 
-// .container section {
-//     height: 10%;
-//     width: 100%;
-// }
+.container section {
+    height: 100vh;
+    width: 100%;
+}
 
 body {
     font-family:  'Roboto Mono', monospace;
@@ -48,15 +48,11 @@ body {
     
 }
 
-.welcome .text p {
+.text p {
     font-size: 24px;
     text-align: center;
     padding: 0;
 }
-
-
-
-
 
 /* Nav bar styling */
 
@@ -88,23 +84,9 @@ nav li a {
     color: white;  
 }
 
-// a:hover { 
-//     color: white; 
-// }
-
-
-
- /* .imagebox1 { 
-    width: 70%;
-    height: 80%;
-    background-image: url("./portosunset.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}  */
-
 .page {
-    height: 100vh;
-    width: 100vw;
+    height: 150vh;
+    // width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -118,6 +100,8 @@ nav li a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+
 }
 
 .imagebox1 {
@@ -128,23 +112,6 @@ nav li a {
     background-repeat: no-repeat;
 }
 
-.page3 {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.container .nurse {
-    height: 30%;
-    width: 60%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
 .imagebox2 {
     height: 30%;
@@ -152,24 +119,6 @@ nav li a {
     background-image: url("./nursing.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.page4 {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.container .tech {
-    height: 30%;
-    width: 60%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 .imagebox3 {
@@ -180,23 +129,6 @@ nav li a {
     background-repeat: no-repeat;
 }
 
-.page5 {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.container .duo {
-    height: 30%;
-    width: 60%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
 .imagebox4 {
     height: 30%;
@@ -207,23 +139,6 @@ nav li a {
     background-repeat: no-repeat;
 }
 
-.page6 {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.container .hobbies {
-    height: 30%;
-    width: 60%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
 .imagebox5 {
     height: 30%;
@@ -234,17 +149,8 @@ nav li a {
     background-repeat: no-repeat;
 }
 
-.page10 {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .container .contact-container {
-    height: 50%;
+    height: 100vh;
     width: 60%;
     text-align: center;
     display: flex;
@@ -322,159 +228,35 @@ nav li a {
         padding-top: 46px;
     }
 
-    .page2 {
+  
+
+    .page {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        height: 5%;
-        // border: 2px solid green;
-        margin: 0 auto;
-
-        .about.right {
-            display: flex;
-            height: 80%;
-            flex-direction: row;
-            // border: 1px solid red;
-            width: 40%;
-            text-align: center;
-            align-items: center;
-
-        }
-
-        .left {
-            display: flex;
-            flex-direction: row;
-            width: 40%;
-            height: 80%;
-            // border: 1px solid red;
-        }
-    }
-
-    .page3 {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 5%;
-        // border: 2px solid green;
-        margin: 0 auto;
-
-        .nurse.right {
-            display: flex;
-            height: 80%;
-            flex-direction: row;
-            // border: 1px solid red;
-            width: 40%;
-            text-align: center;
-            align-items: center;
-
-        }
-
-        .left {
-            display: flex;
-            flex-direction: row;
-            width: 40%;
-            height: 80%;
-            // border: 1px solid red;
-        }
-    }
-
-    .page4 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 5%;
+        height: 400px;
         border: 2px solid green;
         margin: 0 auto;
 
-        .tech.right {
-            display: flex;
-            height: 80%;
-            flex-direction: row;
-            border: 1px solid red;
-            width: 40%;
-            text-align: center;
-            align-items: center;
-
-        }
-
-        .left {
+        .right {
             display: flex;
             flex-direction: row;
             width: 40%;
-            height: 80%;
+            height: 250px;
             border: 1px solid red;
-        }
-    }
-
-    .page5 {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 5%;
-        border: 2px solid green;
-        margin: 0 auto;
-
-        .duo.right {
-            display: flex;
-            height: 80%;
-            flex-direction: row;
-            border: 1px solid red;
-            width: 40%;
-            text-align: center;
-            align-items: center;
-
-        }
-
-        .left {
-            display: flex;
-            flex-direction: row;
-            width: 40%;
-            height: 80%;
-            border: 1px solid red;
-        }
-    }
-    .page6 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 5%;
-        border: 2px solid green;
-        margin: 0 auto;
-
-        .hobbies.right {
-            display: flex;
-            height: 80%;
-            flex-direction: row;
-            border: 1px solid red;
-            width: 40%;
-            text-align: center;
-            align-items: center;
-
-        }
-
-        .left {
-            display: flex;
-            flex-direction: row;
-            width: 40%;
-            height: 80%;
-            border: 1px solid red;
-        }
-    }
-
-}       
+        } 
     
-
-
-
+        .left {
+                display: flex;
+                flex-direction: row;
+                width: 40%;
+                height: 250px;
+                border: 1px solid red;
+        }      
+    }
+    
+}
 
 }
